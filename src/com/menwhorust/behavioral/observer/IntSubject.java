@@ -3,6 +3,9 @@ package com.menwhorust.behavioral.observer;
 import java.util.ArrayList;
 
 public class IntSubject implements Subject {
+    // With the observer pattern we keep a list of observers
+    // on a subject class so the observers will know of any
+    // changes.
     private int value = 0;
     private final ArrayList<Observer> observers = new ArrayList<>();
 
