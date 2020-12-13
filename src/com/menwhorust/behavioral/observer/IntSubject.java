@@ -33,6 +33,9 @@ public class IntSubject implements Subject {
     }
 
     public void setState(int value) {
+        if(this.value == value)
+            return;
+
         this.value = value;
         notifyObservers();
     }
