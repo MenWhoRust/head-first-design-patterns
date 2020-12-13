@@ -32,9 +32,6 @@ public class ConcreteUiSubject<TValue> implements UiSubject<TValue>{
     }
 
     public void setValue(TValue value){
-        if(someValue == value)
-            return;
-
         someValue = value;
         changed();
     }

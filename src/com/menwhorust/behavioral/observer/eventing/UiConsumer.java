@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class UiConsumer {
 
     public static void main(String[] args) {
-        ConcreteUiSubject<Integer> subject = new ConcreteUiSubject<Integer>(0);
+        ConcreteUiSubject<Integer> subject = new ConcreteUiSubject<>(0);
 
         subject.addEventListener(integer -> {
             if(integer == 1)
@@ -13,8 +13,12 @@ public class UiConsumer {
             if(integer == 2)
                 System.out.println("Two is not so good");
 
+            if(integer == 0)
+                System.exit(0);
+
         });
 
+        //noinspection InfiniteLoopStatement
         while (true) {
             Scanner scanner = new Scanner(System.in);
 
