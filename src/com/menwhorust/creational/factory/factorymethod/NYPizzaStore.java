@@ -1,4 +1,4 @@
-package com.menwhorust.creational.factory;
+package com.menwhorust.creational.factory.factorymethod;
 
 public class NYPizzaStore extends PizzaStore {
     @Override

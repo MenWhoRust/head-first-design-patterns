@@ -1,4 +1,4 @@
-package com.menwhorust.creational.factory;
+package com.menwhorust.creational.factory.factorymethod;
 
 import java.util.ArrayList;
 
